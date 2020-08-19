@@ -1,18 +1,15 @@
 import React from "react";
-
+import Login from "./Login";
+import Heading from "./Heading"
 
 var isLogedIn = false;
 
 function renderConditionally(){
   if (isLogedIn){
-    return <h1>Hello</h1>;
+    return <Heading text= "Hello"/>
   }else{
     return (
-      <form className="form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
+      <Login/>
     );
   }
 }
