@@ -5,13 +5,10 @@ import Heading from "./Heading"
 var isLogedIn = false;
 
 function renderConditionally(){
-  if (isLogedIn){
+  if (isLogedIn)
     return <Heading text= "Hello"/>
-  }else{
-    return (
-      <Login/>
-    );
-  }
+  else
+    return <Login/> 
 }
 
 function App() {
